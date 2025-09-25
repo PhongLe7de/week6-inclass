@@ -6,7 +6,7 @@ pipeline{
     stages{
      stage('checking'){
         steps {
-            git branch:'main', url: 'https://github.com/PhongLe7de/week6-inclass'
+            git branch:'main', url: 'https://github.com/PhongLe7de/week6-inclass.git'
         }
      }
      stage('build'){
