@@ -11,7 +11,7 @@ pipeline{
      }
      stage('build'){
         steps {
-            bat 'mnv clean install'
+            sh 'mnv clean install'
         }
      }
       stage('Checkout') {
