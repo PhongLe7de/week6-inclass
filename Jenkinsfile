@@ -14,11 +14,11 @@ pipeline{
             sh 'mnv clean install'
         }
      }
-      stage('Checkout') {
-                 steps {
-                     git 'https://github.com/your-username/your-repo.git'
-                 }
-             }
+stage('Checkout') {
+    steps {
+        git branch: 'main', url: 'https://github.com/PhongLe7de/week6-inclass.git'
+    }
+}
              stage('Build') {
                  steps {
                      bat 'mvn clean install' // sh for linux and ios
